@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rambla", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+  height: 70vh;
+  background: linear-gradient(rgba(119, 119, 119, 0.7), rgba(119, 119, 119, 0.7)), url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  clip-path: polygon(50% 0%, 100% 0, 100% 84%, 19% 100%, 0 90%, 0 0);
+  overflow: hidden;
+}
+.header__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  font-size: 7rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 2px 4px #590f34;
+  padding-top: 55px;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
+.header__SubTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  padding-top: 13px;
+  text-shadow: 1px 1px 2px #590f34;
+  overflow: hidden;
+}
+
+.nav {
+  width: 95%;
+}
+.nav__logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.nav__item {
+  padding: 0 5px;
+}
+.nav__link {
+  color: white;
+  padding: 0 5px 3px 0;
+  font-size: 1.3rem;
+}
+.nav__link:hover {
+  color: white;
+  padding: 0 5px 3px 0;
+  border-bottom: 1px solid white;
+  background-color: rgba(255, 255, 255, 0);
+}
+.nav .nav__SubList {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+}
+.nav .nav__SubList__link:hover {
+  background-color: rgba(0, 255, 255, 0);
+}
+
+.AboutUs {
+  width: 100%;
+  height: 70vh;
+  margin: 30px 0;
+  display: grid;
+  grid-template-rows: 460px 1fr;
+  overflow: hidden;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+}
+.AboutUs__title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 1px 2px #590f34;
+}
+.AboutUs__text {
+  color: #590f34;
+  font-size: 1.2rem;
+  margin: 0 5px;
+}
+.AboutUs__img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
