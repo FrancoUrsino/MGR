@@ -1,5 +1,5 @@
 let valueDisplays = document.querySelectorAll(".clients__container--number");
-let interval = 4000;
+let interval = 5000;
 
 valueDisplays.forEach((valueDisplay) => {
   let startValue = 0;

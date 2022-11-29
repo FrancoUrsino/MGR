@@ -45,21 +45,28 @@
 
   }
   
-  &__btn{
-    background-color: $p-color;
-    cursor: pointer;
-    border-radius: 10px;
-
-    &:hover{
-      background-color: $t-color;
-    }
-  }
-  
   &__link{
     font-size: 25px;
     color: $s-color;
     padding: 7px 10px;
     background-color: $p-color;
+    cursor: pointer;
+    border-radius: 7px;
+
+
+    &:hover{
+      color: $t-color;
+      text-shadow: 1px 2px 4px $p-color;
+      -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+      background-color: $t-color;
+    }
+  }
+
+  &__link--2{
+    font-size: 25px;
+    color: $p-color;
+    padding: 7px 10px;
+    background-color: $s-color;
     cursor: pointer;
     border-radius: 7px;
 
