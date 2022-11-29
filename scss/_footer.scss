@@ -1,0 +1,45 @@
+.footer{
+  width: 100%;
+  margin: 30px 0;
+  
+  &__container{
+    border-top: 1.5px solid $p-color;
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(80px, auto));
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+  }
+
+  &__img{
+    object-fit: cover;
+  }
+  
+  &__list{
+    list-style: none;
+    color: rgb(183, 179, 179);
+    padding: 0;
+
+    .footer__text2{
+      display: none;
+
+      &--link{
+        text-decoration: none;
+        color: rgb(107, 107, 107);
+
+        &:hover{
+          color: $p-color;
+        }
+      }
+    }
+  }
+  
+  &__icons a{
+    text-decoration: none;
+  }
+  &__icon{
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;    
+  }
+}

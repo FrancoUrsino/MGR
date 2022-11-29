@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Rambla", sans-serif;
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -15,10 +16,11 @@ a {
 
 .header {
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background: linear-gradient(rgba(119, 119, 119, 0.7), rgba(119, 119, 119, 0.7)), url(../img/header.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
   clip-path: polygon(50% 0%, 100% 0, 100% 84%, 19% 100%, 0 90%, 0 0);
   overflow: hidden;
 }
@@ -49,29 +51,38 @@ a {
   padding-top: 13px;
   text-shadow: 1px 1px 2px #590f34;
   overflow: hidden;
+  letter-spacing: 0.02rem;
 }
 
 .nav {
   width: 95%;
+  position: sticky;
+  top: 0;
 }
 .nav__logo {
-  color: white;
-  font-size: 2rem;
-  font-weight: 600;
+  color: rgb(255, 255, 255);
+  width: 100px;
+  height: 90px;
+  justify-items: center;
+  object-fit: cover;
+  align-self: center;
 }
 .nav__item {
   padding: 0 5px;
 }
 .nav__link {
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0 5px 3px 0;
   font-size: 1.3rem;
 }
 .nav__link:hover {
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 0 5px 3px 0;
   border-bottom: 1px solid white;
   background-color: rgba(255, 255, 255, 0);
+}
+.nav__link:focus {
+  color: rgb(255, 255, 255);
 }
 .nav .nav__SubList {
   background: rgba(255, 255, 255, 0);
@@ -83,15 +94,20 @@ a {
 
 .AboutUs {
   width: 100%;
-  height: 70vh;
+  height: auto;
   margin: 30px 0;
+}
+.AboutUs__container {
+  width: 100%;
   display: grid;
-  grid-template-rows: 460px 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   overflow: hidden;
   justify-content: center;
   justify-items: center;
   align-items: center;
   text-align: center;
+  padding: 10px 5px;
+  margin: 20px 0;
 }
 .AboutUs__title {
   font-size: 2.4rem;
@@ -103,6 +119,7 @@ a {
   color: #590f34;
   font-size: 1.2rem;
   margin: 0 5px;
+  padding: 0 5px;
 }
 .AboutUs__img {
   width: 250px;
@@ -110,6 +127,199 @@ a {
   border-radius: 50%;
   object-fit: cover;
   margin-top: 10px;
+}
+
+/*--------------------------------------*/
+/*----------------CARDS-----------------*/
+/*--------------------------------------*/
+.AboutUs__card {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.AboutUs__container--2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px 5px;
+  row-gap: 2rem;
+}
+.AboutUs__container--2 .card_ {
+  width: 240px;
+  min-height: 240px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+.AboutUs__container--2 .card___title {
+  font-size: 1.5rem;
+  color: #590f34;
+  font-weight: 500;
+  padding: 10px 0 5px 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #590f34;
+}
+.AboutUs__container--2 .card___text {
+  line-height: 1.1rem;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.AboutUs__container--2 .card___text--2 {
+  line-height: 1.1rem;
+  font-size: 3rem;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+.AboutUs__container--2 .card___size {
+  width: 50px;
+  height: 50px;
+}
+
+.clients {
+  width: 100%;
+  margin: 60px 0;
+  overflow: hidden;
+  padding: 10px 0;
+}
+.clients__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, auto));
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  gap: 2em;
+}
+.clients__container--container {
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 3px 5px 2px 3px rgba(223, 223, 223, 0.426);
+}
+.clients__container--title {
+  color: #590f34;
+  font-weight: bold;
+}
+.clients__container--number {
+  font-size: 2rem;
+  color: #f9e46e;
+  text-shadow: 1px 2px 4px #590f34;
+}
+
+.proyects {
+  width: 100%;
+  margin: 40px 0;
+}
+.proyects__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.proyects__btn {
+  background-color: #590f34;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.proyects__btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.proyects__link {
+  font-size: 25px;
+  color: #f9e46e;
+  padding: 7px 10px;
+  background-color: #590f34;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.proyects__link:hover {
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 2px 4px #590f34;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.footer {
+  width: 100%;
+  margin: 30px 0;
+}
+.footer__container {
+  border-top: 1.5px solid #590f34;
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax(80px, auto));
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+}
+.footer__img {
+  object-fit: cover;
+}
+.footer__list {
+  list-style: none;
+  color: rgb(183, 179, 179);
+  padding: 0;
+}
+.footer__list .footer__text2 {
+  display: none;
+}
+.footer__list .footer__text2--link {
+  text-decoration: none;
+  color: rgb(107, 107, 107);
+}
+.footer__list .footer__text2--link:hover {
+  color: #590f34;
+}
+.footer__icons a {
+  text-decoration: none;
+}
+.footer__icon {
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+}
+
+@media (min-width: 600px) {
+  .header__title {
+    font-size: 9rem;
+    padding-top: 30px;
+  }
+  .header__SubTitle {
+    font-size: 4rem;
+    padding-top: 0;
+  }
+  .footer {
+    width: 100%;
+    margin: 30px 0;
+  }
+  .footer__container {
+    border-top: 1.5px solid #590f34;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
+    margin: 0 40px;
+  }
+  .footer__img {
+    justify-self: left;
+  }
+  .footer__list {
+    list-style: none;
+    color: rgb(183, 179, 179);
+  }
+  .footer__list .footer__text2 {
+    display: block;
+  }
+  .footer__icons {
+    justify-self: right;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

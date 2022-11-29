@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>M.G.R Construcciones</title>
+  <title>M.G.R. Construcciones</title>
   <!-- LINK FUENTE -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rambla:wght@400;700&display=swap" rel="stylesheet">
-
+  <!-- LINK FAVICON -->
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <!-- LINK BS ICONOS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <!-- LINK BS CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- LINK CSS -->
@@ -19,43 +22,43 @@
   <header class="header">
     <nav class="navbar nav navbar-expand-lg">
       <div class="container-fluid">
-        <h2 class="navbar-brand nav__logo" href="#">M.G.R</h2>
+        <img class="navbar-brand nav__logo" src="img/logo.png">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown" style="justify-content: flex-end;">
           <ul class="navbar-nav">
             <li class="nav-item nav__item">
-              <a class="nav-link nav__link" aria-current="page" href="#">Home</a>
+              <a class="nav-link nav__link" href="#">Inicio</a>
             </li>
             <li class="nav-item nav__item">
-              <a class="nav-link nav__link" href="#">Features</a>
-            </li>
-            <li class="nav-item nav__item">
-              <a class="nav-link nav__link" href="#">Pricing</a>
+              <a class="nav-link nav__link" href="#">Trabajos</a>
             </li>
             <li class="nav-item dropdown nav__item">
               <a class="nav-link nav__link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
+                Acerca De
               </a>
               <ul class="dropdown-menu nav__SubList">
-                <li class="nav__item"><a class="dropdown-item nav__link" href="#">Action</a></li>
-                <li class="nav__item"><a class="dropdown-item nav__link" href="#">Another action</a></li>
-                <li class="nav__item"><a class="dropdown-item nav__link" href="#">Something else here</a></li>
+                <li class="nav__item"><a class="dropdown-item nav__link" href="#nosotros">Nosotros</a></li>
+                <li class="nav__item"><a class="dropdown-item nav__link" href="#servicios">Servicios</a></li>
+                <li class="nav__item"><a class="dropdown-item nav__link" href="#"></a></li>
               </ul>
+            </li>
+            <li class="nav-item nav__item">
+              <a class="nav-link nav__link" href="#">Contactanos</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <section class="header__info">
-      <h1 class="header__title">MGR</h1>
-      <h2 class="header__SubTitle">CONTRUCCIONES</h2>
+      <h1 class="header__title">M.G.R.</h1>
+      <h2 class="header__SubTitle">CONTRUCCIONES S.R.L</h2>
     </section>
   </header>
 
   <main>
-    <section class="AboutUs">
+    <section class="AboutUs" id="nosotros">
       <div class="AboutUs__container">
         <div class="AboutUs__info">
           <h2 class="AboutUs__title">NUESTRO EQUIPO</h2>
@@ -65,39 +68,106 @@
       </div>
     </section>
 
-    <section class="AboutUs__card">
+    <section class="AboutUs__card" id="servicios">
       <div class="AboutUs__container--2">
         <div class="card_">
-          <img src="img/laptop-_1_.svg" alt="" class="card___icon">
-          <h3 class="card___title">informática</h3>
-          <p class="card___text">software | Hardware</p>
-          <p class="card___text">Mantenimiento</p>
-          <p class="card___text">Armado de Equipamiento</p>
+          <img src="img/svg/home.svg" alt="" class=" card___icon">
+          <h3 class="card___title">CONTRUCCIÓN</h3>
+          <p class="card___text">Lorem ipsum dolor</p>
+          <p class="card___text">Lorem ipsum dolor</p>
+          <p class="card___text">Lorem ipsum dolor</p>
         </div>
       </div>
       <div class="AboutUs__container--2">
         <div class="card_">
-          <img src="img/laptop-_1_.svg" alt="" class="card___icon">
-          <h3 class="card___title">informática</h3>
-          <p class="card___text">software | Hardware</p>
-          <p class="card___text">Mantenimiento</p>
-          <p class="card___text">Armado de Equipamiento</p>
+          <img src="img/svg/bosquejo.svg" alt="" class="card___size card___icon">
+          <h3 class="card___title">PLANIFICACIÓN</h3>
+          <p class="card___text">Lorem ipsum dolor</p>
+          <p class="card___text">Lorem ipsum dolor</p>
+          <p class="card___text">Lorem ipsum dolor</p>
         </div>
       </div>
       <div class="AboutUs__container--2">
         <div class="card_">
-          <img src="img/laptop-_1_.svg" alt="" class="card___icon">
-          <h3 class="card___title">informática</h3>
-          <p class="card___text">software | Hardware</p>
-          <p class="card___text">Mantenimiento</p>
-          <p class="card___text">Armado de Equipamiento</p>
+          <img src="img/svg/hogar.svg" alt="" class="card___size card___icon">
+          <h3 class="card___title">REPARACIONES</h3>
+          <p class="card___text">Lorem ipsum dolor</p>
+          <p class="card___text">Lorem ipsum dolor</p>
+          <p class="card___text">Lorem ipsum dolor</p>
         </div>
+      </div>
+      <div class="AboutUs__container--2">
+        <div class="card_">
+          <img src="img/svg/presupuesto.svg" alt="" class="card___size card___icon">
+          <h3 class="card___title">PRESUPUESTOS</h3>
+          <p class="card___text">Lorem ipsum dolor</p>
+          <p class="card___text">Lorem ipsum dolor</p>
+          <p class="card___text">Lorem ipsum dolor</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="clients__container">
+        <div class="clients__container--container">
+          <i class="fab fa-twitter"></i>
+          <span class="clients__container--number" data-val="350">000</span><br>
+          <span class="clients__container--title">Obras realizadas</span>
+        </div>
+        <div class="clients__container--container">
+          <i class="fab fa-facebook-f"></i>
+          <span class="clients__container--number" data-val="250">000</span><br>
+          <span class="clients__container--title">Reparaciones</span>
+        </div>
+        <div class="clients__container--container">
+          <i class="fab fa-youtube"></i>
+          <span class="clients__container--number" data-val="70">000</span><br>
+          <span class="clients__container--title">Clientes</span>
+        </div>
+        <div class="clients__container--container">
+          <i class="fab fa-instagram"></i>
+          <span class="clients__container--number" data-val="275">000</span><br>
+          <span class="clients__container--title">Lorem, ipsum.
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <section class="proyects">
+      <div class="proyects__container">
+        <p><a href="" class="proyects__link">VER PROYECTOS</a></p>
       </div>
     </section>
   </main>
 
 
+  <footer class="footer">
+    <div class="footer__container">
+      <img src="img/logo.png" alt="" class="footer__img" width="80px" height="80px">
+      <ul class="footer__list">
+        <li class="footer__text">1997-2022&copy;EFICAP | All Rigths Reserved</li>
+        <li class="footer__text2">Diseño y Desarrolo por <a href="mailto:francooursinoo@gmail.com">Franco Ursino</a></li>
+      </ul>
+      <div class="footer__icons">
+        <a href="mailto:eficap@eficap.com.ar">
+          <img src="img/svg/gmail.svg" alt="" class="footer__icon">
+        </a>
+        <a href="#">
+          <img src="img/svg/wpp.svg" alt="" class="footer__icon">
+        </a>
+        <a href="#">
+          <img src="img/svg/instagram.svg" alt="" class="footer__icon">
+        </a>
+        <!-- <a href="tel:+541138460917">
+          <img src="img/llamada.svg" alt="" class="footer__icon">
+        </a> -->
+      </div>
+    </div>
+  </footer>
+
+  <!-- LINK JS -->
+  <script src="js/script.js"></script>
   <!-- LINK BS JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
-</html>
+</html2

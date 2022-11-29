@@ -1,14 +1,21 @@
 .AboutUs{
   width: 100%;
-  height: 70vh;
+  height: auto;
   margin: 30px 0;
-  display: grid;
-  grid-template-rows: 460px 1fr;
-  overflow: hidden;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  text-align: center;
+
+  &__container{
+    width: 100%;
+    display: grid;
+    // grid-template-rows: 460px 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    overflow: hidden;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 5px;
+    margin: 20px 0;
+  }
 
   &__title{
     font-size: 2.4rem;
@@ -21,6 +28,7 @@
     color: $p-color;
     font-size: 1.2rem;
     margin: 0 5px;
+    padding: 0 5px;
   }
 
   &__img{
@@ -29,5 +37,64 @@
     border-radius: 50%;
     object-fit: cover;
     margin-top: 10px;
+  }
+}
+
+/*--------------------------------------*/
+/*----------------CARDS-----------------*/
+/*--------------------------------------*/
+
+.AboutUs__card{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.AboutUs__container--2{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px 5px;
+  row-gap:2rem;
+
+  .card_{
+    width: 240px;
+    min-height: 240px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+    &__title{
+      font-size: 1.5rem;
+      color: $p-color;
+      font-weight: 500;
+      padding: 10px 0 5px 0;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      border-bottom: 3px solid $p-color;
+    }
+
+    &__text{
+      line-height: 1.1rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+
+    &__text--2{
+      line-height: 1.1rem;
+      font-size: 3rem;
+      font-weight: 300;
+      text-transform: capitalize;
+    }
+
+    &__size{
+      width: 50px;
+      height: 50px;
+    }
   }
 }
