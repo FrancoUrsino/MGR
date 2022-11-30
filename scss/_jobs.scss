@@ -1,0 +1,35 @@
+.jobs{
+  width: 100%;
+  margin: 30px 0;
+
+
+  &__container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+
+    &--container{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--img{
+      width: 100%;
+      padding: 20px 30px;
+    }
+
+    &--info{
+      text-align: center;
+    }
+  
+
+    &--container2{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

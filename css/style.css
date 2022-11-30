@@ -38,6 +38,20 @@ a {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
   overflow: hidden;
 }
+.header__title--2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-items: center;
+  font-size: 5.5rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.4);
+  text-shadow: 1px 2px 4px #590f34;
+  padding-top: 55px;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  overflow: hidden;
+}
 .header__SubTitle {
   display: flex;
   justify-content: center;
@@ -266,6 +280,35 @@ a {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.jobs {
+  width: 100%;
+  margin: 30px 0;
+}
+.jobs__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2em;
+}
+.jobs__container--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  justify-content: center;
+  align-items: center;
+}
+.jobs__container--img {
+  width: 100%;
+  padding: 20px 30px;
+}
+.jobs__container--info {
+  text-align: center;
+}
+.jobs__container--container2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+  justify-content: center;
+  align-items: center;
+}
+
 .footer {
   width: 100%;
   margin: 30px 0;
@@ -316,6 +359,9 @@ a {
     font-size: 9rem;
     padding-top: 30px;
   }
+  .header__title--2 {
+    font-size: 9rem;
+  }
   .header__SubTitle {
     font-size: 4rem;
     padding-top: 0;
@@ -345,6 +391,9 @@ a {
   }
   .footer__icons {
     justify-self: right;
+  }
+  .jobs__container--container2 .jobs__container--img {
+    order: 1;
   }
 }
 

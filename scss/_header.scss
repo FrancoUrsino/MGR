@@ -22,6 +22,21 @@
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
     overflow: hidden;
   }
+
+  &__title--2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    font-size: 5.5rem;
+    font-weight: 600;
+    color: $t-color;
+    text-shadow: 1px 2px 4px $p-color;
+    padding-top: 55px;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+    overflow: hidden;
+  }
   &__SubTitle{
     display: flex;
     justify-content: center;
