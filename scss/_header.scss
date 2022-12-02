@@ -21,6 +21,7 @@
     padding-top: 55px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
     overflow: hidden;
+    cursor: pointer;
   }
 
   &__title--2{
@@ -36,7 +37,9 @@
     padding-top: 55px;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
     overflow: hidden;
+    cursor: pointer;
   }
+
   &__SubTitle{
     display: flex;
     justify-content: center;
@@ -51,6 +54,7 @@
     text-shadow: 1px 1px 2px $p-color;
     overflow: hidden;
     letter-spacing: 0.02rem;
+    cursor: pointer;
   }
 }
 

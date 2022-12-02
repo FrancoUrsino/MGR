@@ -37,6 +37,7 @@ a {
   padding-top: 55px;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
   overflow: hidden;
+  cursor: pointer;
 }
 .header__title--2 {
   display: flex;
@@ -51,6 +52,7 @@ a {
   padding-top: 55px;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
   overflow: hidden;
+  cursor: pointer;
 }
 .header__SubTitle {
   display: flex;
@@ -66,6 +68,7 @@ a {
   text-shadow: 1px 1px 2px #590f34;
   overflow: hidden;
   letter-spacing: 0.02rem;
+  cursor: pointer;
 }
 
 .nav {
@@ -307,6 +310,159 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
   justify-content: center;
   align-items: center;
+}
+
+.contact__body {
+  color: #f9e46e;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.7), rgba(79, 79, 79, 0.7)), url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.form {
+  height: 100vh;
+  padding: 35px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form__container {
+  width: 100%;
+  max-width: 450px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 30px 0 rgba(48, 48, 51, 0.4);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.form__box {
+  border-color: rgb(255, 255, 255);
+  border: 1px solid var(rgba(180, 180, 180, 0.5411764706));
+  padding: 40px 50px;
+  border-radius: 20px;
+  backdrop-filter: blur;
+}
+.form__title {
+  font-size: 28px;
+  text-align: center;
+  line-height: 1.2;
+  color: rgb(255, 255, 255);
+}
+.form__container--form {
+  margin: 25px 0 20px;
+}
+.form__box--input {
+  margin: 25px;
+}
+.form__input {
+  display: grid;
+  height: 30px;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #f9e46e;
+  color: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  font-size: 16px;
+  outline: none;
+}
+.form__input::placeholder {
+  color: #590f34;
+}
+.form__label {
+  color: #590f34;
+  padding-bottom: 5px;
+}
+.form__checks {
+  font-size: 13px;
+  align-items: flex-start;
+  font-weight: 300;
+}
+.form__checks a {
+  color: #f9e46e;
+  text-shadow: rgba(0, 0, 0, 0.3) 1px 1px;
+}
+.form__checks a:hover {
+  color: #590f34;
+}
+.form .btn__neon {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  letter-spacing: 4px;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
+  background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 255, 255, 0.465)) 0 0/400% 100%;
+  animation: move-bg 3s infinite alternate-reverse;
+  background-clip: var(-webkit-background-clip);
+  -webkit-background-clip: text;
+  color: transparent;
+  border: none;
+}
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
+}
+.form .btn__neon:hover {
+  background: rgb(255, 255, 255);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4), 0 0 40px rgba(255, 255, 255, 0.4), 0 0 80px rgba(255, 255, 255, 0.4);
+  transition-delay: 1.25s;
+  color: #590f34;
+}
+.form .btn__neon span {
+  position: absolute;
+  display: block;
+}
+.form .btn__neon #span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4));
+}
+.form .btn__neon:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+.form .btn__neon #span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.4));
+}
+.form .btn__neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+.form .btn__neon #span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, rgba(255, 255, 255, 0.4));
+}
+.form .btn__neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+.form .btn__neon #span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, rgba(255, 255, 255, 0.4));
+}
+.form .btn__neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
 }
 
 .footer {
