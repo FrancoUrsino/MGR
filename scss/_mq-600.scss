@@ -60,4 +60,29 @@
       order: 1;
     }
   }
+
+  .AboutUs__card--2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(470x, 1fr));
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+  }
+  .AboutUs__container--2{
+    
+    .card__2{
+      width: 450px;
+      min-height: 450px;
+      text-align: center;
+      align-items: center;
+      justify-items: center;
+      padding: 5px 10px;
+      border-radius: 15px;
+    }
+  }
+
+  .AboutUs__card--title2{
+    font-size: 3.2rem;
+  }
 }

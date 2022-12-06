@@ -44,10 +44,47 @@
 /*----------------CARDS-----------------*/
 /*--------------------------------------*/
 
+.AboutUs__card--title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  color: $t-color;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  margin-top: 13px;
+  text-shadow: 1px 1px 2px $p-color;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.AboutUs__card--title2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  justify-self: center;
+  color: $t-color;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  margin-top: 13px;
+  text-shadow: 1px 1px 2px $p-color;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .AboutUs__card{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.AboutUs__card--2{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   justify-content: center;
   justify-items: center;
   text-align: center;
@@ -83,6 +120,7 @@
       font-size: 1.1rem;
       font-weight: 300;
       text-transform: capitalize;
+      padding: 1px 0;
     }
 
     &__text--2{
@@ -90,6 +128,11 @@
       font-size: 3rem;
       font-weight: 300;
       text-transform: capitalize;
+      color: rgba(0, 0, 0, 0.7);
+
+      & span{
+        color: $s-color;
+      }
     }
 
     &__size{
@@ -97,4 +140,33 @@
       height: 50px;
     }
   }
+
+  .card__2{
+    width: 360px;
+    min-height: 360px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    padding: 5px 10px;
+    border-radius: 15px;
+  }
+
+  .card___text--2{
+    line-height: 1.3rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 5px 0;
+  }
+  .card___text--3{
+    padding: 7px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: lowercase;
+    text-align: center;
+    color: $p-color;
+  }
 }
+
+

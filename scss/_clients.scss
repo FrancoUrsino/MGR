@@ -17,7 +17,7 @@
       width: 150px;
       background-color: $t-color;
       border: 1px solid rgba(255, 255, 255, 0.6);
-      box-shadow: 3px 5px 2px 3px rgba(223, 223, 223, 0.426);
+      box-shadow: 3px 4px 4px rgba(223, 223, 223, 0.426), inset 5px 4px 6px rgba(223, 223, 223, 0.426);
     }
 
     &--title{
